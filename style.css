@@ -4,14 +4,15 @@ Theme Name: La guantera de la suerte
 Theme URL: http://laguanteradelasuerte.cl
 Description: Tema para la guantera de la suerte, concurso de PentaSecurity que regala chalecos reflectantes
 Version: 1.0
-Author: Upmedia (joasssko)
+Author: Upmedia (joasssko) (@arturjofre)
 Author URL: http://upmedia.cl
 */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400,300,700,900);
+
 
 #menu-navegacion li a, #menu-navegacion-b li a, h1, h2 { text-transform: uppercase }
-h1, h2, h3, h4 { font-family: Raleway, helvetica, arial, sans-serif }
+h1, h2, h3, h4 { font-family: 'Lato', helvetica, arial, sans-serif }
 
 * { padding: 0; margin: 0 }
 .clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0 }
@@ -30,8 +31,8 @@ html[xmlns] .clearfix { display: block }
 
 b, strong { font-weight: 700 }
 em, i { font-style: italic }
-small { font-size: 10px }
-p { font-family: helvetica, arial, sans-serif; color: #323232 }
+small { font-size: 12px }
+p { font-family:  'Lato', helvetica, arial, sans-serif; color: #fff }
 
 .separator { padding: 15px 0 }
 .miniseparator { padding-bottom: 10px }
@@ -39,7 +40,7 @@ p { font-family: helvetica, arial, sans-serif; color: #323232 }
 .border { padding: 15px 15px 0; margin-bottom: 15px; border-bottom: 1px solid #ccc  }
 .bordery{ border: 1px solid #c2c2c2; border-left: 340px solid #fee00a; margin: 0 15px;}
 
-body { font-family: Raleway, Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; background-color: #fff; color: #343333 }
+body { font-family: 'Lato', Helvetica, Arial, sans-serif; font-weight: 300; background-color: #000; color: #fff }
 
 .callout { border-bottom: 1px solid #ccc; padding: 20px; border-left: 6px solid #e21717 }
 blockquote , .callout  { background-color: #f2f2f2 }
@@ -90,7 +91,9 @@ h3 { font-weight: 900; }
 /*************************************************************************************/
 /***********************************Loader Spiner*************************************/
 /*************************************************************************************/
-#loader-wrapper { background-color: #00609e; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10000000; bottom: 0; right: 0; }
+#loader-wrapper {text-align: center; color:#fff; background-color: #353e75; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10000000; bottom: 0; right: 0; }
+
+#loader-wrapper i{top: 50vh; position: absolute; font-size: 36px;}
 
 #loader-wrapper img{ top: 0;  bottom: 0; margin: auto auto; display: block; position: absolute; left: 0; right: 0; padding-top:5%}
 
@@ -104,7 +107,7 @@ h3 { font-weight: 900; }
 @keyframes spin { 0% { -webkit-transform: rotate(0); -ms-transform: rotate(0); transform: rotate(0) }
     100% { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg) }
 }
-body { }
+
 
 /*************************************************************************************/
 /***********************************Shadowbox*****************************************/
@@ -233,7 +236,7 @@ body.nav-expanded { margin-left: 0em; transition: right 0.4s ease-in-out 0s; -we
 .nav-expanded .icn1{ transform: rotate(45deg);}
 .nav-expanded .icn3{ height:0 ; width:0 }
 .nav-expanded .icn2{ transform: rotate(-45deg); margin-top: -3px !important;}
-.navbar { background-color:#353e75; z-index: 9999; border: none; transition: all .6s ease-in }
+.navbar {margin-bottom: 0; background-color:#353e75; z-index: 9999; border: none; padding: 30px; transition: all .6s ease-in}
  
 .navbar .logo { padding: 15px 0 10px }
 .navbar-default { margin: 0!important }
@@ -251,7 +254,15 @@ header{ text-align:center;}
 /***********************************Main**********************************************/
 /*************************************************************************************/
 
-#head{ /*background-image:url(images/bgtop.jpg); background-repeat:no-repeat; background-position: top center; background-size: 100% 100%; */ }
+#head{ padding-top: 100px; }
+#logo-guantera {z-index: 1005; position: relative;}
+#chaleco {text-align: center; }
+#chaleco img {width: 350px}
+#chaleco-chico {width: 200px;}
+.paso{ padding:0px 0px 230px 0px;}
+#notificaciones {text-align: center;}
+#terminos {text-align: center;}
+.line-w{border-top: 1px solid #ffffff}
 
 
 
@@ -264,6 +275,64 @@ header{ text-align:center;}
     100% { background-color:#be2627 }
 }
 
+
+/*************************************************************************************/
+/**************************************Steps******************************************/
+/*************************************************************************************/
+#ingresacodigo{padding-bottom: 370px; position: relative; z-index: 1010}
+#ingresacodigo label {display: block;}
+#step-1 {display:inline-block; background-image: url("images/guantera.png"); background-repeat: no-repeat; background-size: 100%; background-position: bottom center;}
+#step-1 h3{font-size: 30px; font-weight: 300; text-align: center; margin: 45px 0 65px 0;}
+#btn-canjear {width:220px;color: #fff;background-color: #353e75; border-color: #353e75; font-weight:700; font-size: 32px; padding: 10px; text-transform: uppercase; position: relative; z-index: 1015}
+#step-1 input{background: none; font-size: 24px; padding: 5px; margin: 10px 0;}
+#luz-i {position: absolute;z-index: 1000; top:70px; left: 0;}
+#luz-c {position: absolute;z-index: 1002; top:70px; left: 0; right: 0;}
+#luz-d {position: absolute;z-index: 1001; top:70px; right: 0}
+
+#step-2 {position: absolute; z-index: 1005; margin:50px 0; padding:50px 0; background-image: url("images/bg.png"); background-size: 100%; background-position: top center}
+#step-2 input{background: none; color:#fff; margin-bottom: 10px;}
+#step-2 small{font-size:  12px; color: #fff ;text-decoration: underline; }
+#step-2 h3 {font-weight: 300; margin: 30px 0; font-size: 36px; text-align: center;}
+#btn-revisa { display: block; color: #353e75 !important;background-color: #fff !important; border-color: #353e75; font-weight:700; font-size: 24px; padding: 15px; text-transform: uppercase;}
+.text-center {text-align: center;}
+#intereses {padding: 10px 0;}
+#recibir {padding: 10px 0;}
+.wpcf7-form label {padding: 10px 0;}
+.wpcf7-list-item { margin-left: 30px !important;}
+.wpcf7-list-item-label {margin-left: 5px}
+
+#step-2a {padding: 100px 0; text-align: center;}
+#step-2a h3{font-weight: 100; }
+
+
+#step-2b {padding: 100px 0; text-align: center;}
+#step-2b h3{font-weight: 100; }
+#btn-verificar{width: 270px; display: block; color: #353e75 !important;background-color: #fff !important; border-color: #353e75; font-weight:700; font-size: 24px; padding: 15px; text-transform: uppercase;}
+#btn-volver {width: 160px; display: block; color: #353e75 !important;background-color: #fff !important; border-color: #353e75; font-weight:700; font-size: 24px; padding: 15px; text-transform: uppercase; text-decoration: none;}
+
+
+
+
+#step-3 {}
+#looser {padding: 70px 30px;text-align: center; background-color: #2a3b50; margin: 80px 0;}
+#looser h2{font-weight: 100; }
+
+#winner {text-align: center; padding: 100px 30px; background-image: url("images/open.png"); background-size: 100%; background-position: bottom center;}
+#winner h2{font-size: 80px; font-weight: 700; padding-bottom: 40px;}
+#winner h3{font-weight: 100; font-size: 36px; padding-bottom: 250px;}
+
+
+/*************************************************************************************/
+/***********************************Por que participar********************************/
+/*************************************************************************************/
+
+#porque {padding: 100px 0 ; background-image: url("images/bg.png");background-size: cover; background-repeat: no-repeat; background-position: top center }
+#porque h3{font-size: 62px; font-weight: 300; text-align: center;}
+#porque p{margin: 25px 0;}
+#porques {margin-top: 50px}
+.porque-box {border: 1px solid #fff; padding: 15px; margin-bottom: 20px}
+.porque-bl {border-left: 1px solid #fff;}
+.porque-br {border-right: 1px solid #fff;}
 
 /*************************************************************************************/
 /***********************************Contact F7****************************************/
@@ -281,7 +350,7 @@ div.wpcf7-mail-sent-ng { background-color: #f30 }
 /*************************************************************************************/
 /***********************************Footer********************************************/
 /*************************************************************************************/
-footer { background-color: #ffa409;  z-index: 1 ; padding:30px 0; color:#fff}
+footer { background-color:none;  z-index: 1 ; padding: 0; color:#fff}
 
 footer p{ color:#fff; font-family:open sans, helvetica, arial, sans-serif; font-size:14px; line-height:150%}
 
@@ -322,7 +391,7 @@ footer img{ margin-right:15px}
 .bajar:hover span{background-color:rgba(255, 164, 9 , .8); }
 
 @media (max-width: 1199px) and (min-width: 992px) { 
-  .container { width: 100% }
+  /*.container { width: 100% }*/
   .navbar-right li a { margin: 10px 0 }
   .modal-lg { width: 90%; margin-top: 100px }
   .carrusel .controls #sgte { right: 15px }
@@ -332,16 +401,21 @@ footer img{ margin-right:15px}
 
   #head .personajes img { max-width: 90%;}
 
+  .paso {padding: 0px 0px 180px 0px;}
+    #step-2 { background-size: cover; background-position: top center; background-repeat: no-repeat;}
 }
 
-@media (max-width: 991px) and (min-width: 768px) { .container { width: 100% }
+@media (max-width: 991px) and (min-width: 768px) { 
+
     .navbar-right li a { margin: 10px 20px }
     .modal-lg { width: 90%; margin-top: 100px }
 	#menu-navegacion li a {margin: 10px 5px; padding: 10px 10px; }
 	#head .personajes img { max-width: 90%;}
+    .paso {padding: 0px 0px 100px 0px;}
+    #step-2 { background-size: cover; background-position: top center; background-repeat: no-repeat;}
 }
 
-@media (max-width: 934px) and (min-width: 768px) { 
+/*@media (max-width: 934px) and (min-width: 768px) { 
 	.navbar .logo { width: 90%; height: auto; margin-right: 0; padding: 0 }
     .navbar .logo img { width: 220px }
     .navbar-header { margin: 15px auto 0 }
@@ -352,9 +426,17 @@ footer img{ margin-right:15px}
     .navbar-nav { margin: 10px auto!important; display: inline-block!important; float: none!important;}
 	
 	.servicio .insider{ padding:100px;}
-}
+
+    
+}*/
 
 @media (max-width: 767px) { 
+
+    .paso {padding: 0px 0px 145px 0px;}
+    #ingresacodigo {padding-bottom: 70px; text-align: center;}
+    #btn-canjear {margin-top: 40px;}ç
+    #step-2 {    background-size: cover; background-position: top center; background-repeat: no-repeat;}
+
     #modal-step-3 .col-esp { padding: 0 15px; }
     .form-control { background-color: #000!important; padding: 10px; font-size: 16px; text-transform: uppercase; font-weight: 700; color: #fff; line-height: 130%!important; height: auto }
     
@@ -396,9 +478,34 @@ footer img{ margin-right:15px}
   	
   	.sharer{ clear:none !important; float:left;}
   	.bajar{ display:none;}
+
+    .paso {padding: 0px 0px 100px 0px;}
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
+    .navbar {padding: 15px}
+    .paso {padding: 0px 0px 145px 0px;}
+    #step-1 {background-size:initial; }
+    #chaleco {text-align:center; padding: 0 30px;}
+    #ingresacodigo {padding-bottom: 60px; }
+    #ingresacodigo label {font-size: 18px;}
+    #ingresacodigo input {font-size: 16px; padding: 2px}
+    #porque h3{font-size: 36px;}
+
+    #btn-canjear {margin-top: 40px;}
+
+    .wpcf7-list-item {display: block;
+    margin-bottom: 10px;
+   
+    
+    }
+    #intereses .wpcf7-list-item {text-align: left;
+        padding-left: 80px;
+    }
+
+
+
+
     .dg-wrapper { width: 100% }
     .modal-body { padding: 15px; }
 	

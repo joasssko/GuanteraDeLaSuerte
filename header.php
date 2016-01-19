@@ -44,11 +44,11 @@ jQuery(window).load(function() {
   jQuery("#loader-wrapper").fadeOut("slow");
 });
 
-var he = $( window ).height();
-jQuery( document ).ready(function() {
-  jQuery('.home #head').css('height' , he);
-  //jQuery('main').css('margin-top' , he);
-});
+// var he = $( window ).height();
+// jQuery( document ).ready(function() {
+//   jQuery('.home #head').css('height' , he);
+//   //jQuery('main').css('margin-top' , he);
+// });
 
 </script>
 
@@ -93,7 +93,16 @@ function FbookShare(){
 } */
    
 </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-47467115-8', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </head>
 
@@ -102,15 +111,9 @@ function FbookShare(){
 <div id="fb-root"></div>
 
 <div id="loader-wrapper">
-  <img src="<?php echo get_bloginfo('template_directory')?>/images/loader-corrida.gif" alt="">
-    <?php /* <div id="loader"></div> */?>
+   <i class="fa fa-circle-o-notch fa-spin"></i>
 </div>
 
-<div id="aviso" class="hidden-lg hidden-md">
-	<?php /* <img src="<?php echo get_bloginfo('template_directory')?>/images/logo.png" alt=""> */?>
-    <div id="inside"><img src="<?php echo get_bloginfo('template_directory')?>/images/cuprum_mobile.png" alt="" /><span class="animated swing infinite"><i class="fa fa-mobile fa-rotate-90"></i></span>Para una mejor experiencia, gire su dispositivo a la posición horizontal.</div>
-    
-</div>
 
 
 <header class="navbar-fixed-top">
@@ -119,9 +122,7 @@ function FbookShare(){
             <img src="<?php echo get_bloginfo('template_directory')?>/images/logo-penta.png" alt="" />
          </div>
       </div>
-      <a href="<?php echo get_bloginfo('url')?>">
-         <img src="<?php echo get_bloginfo('template_directory')?>/images/logo.png" alt="" class="lc">
-      </a>
+
         
    <?php /*  <div class="navbar-ri ght">
     	<?php wp_nav_menu(array('theme_location'  => 'primary', 'menu_class' => 'nav navbar-nav pull-left hidden-xs hidden-sm' , 'container' => 'none')) ?>
